@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="opciones">
+        <item>Capitalizado</item>
+        <item>Amortizado</item>
+    </string-array>
+
+    <string-array name="frecuencia">
+        <item>Mensual</item>
+        <item>Quincenal</item>
+        <item>Semanal</item>
+    </string-array>
+
+    <string-array name="header_table">
+        <item>Fecha</item>
+        <item>Saldo</item>
+        <item>Capital</item>
+        <item>Interes</item>
+        <item>Cuotas</item>
+    </string-array>
+</resources>

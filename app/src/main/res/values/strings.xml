@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Calpress</string>
+    <string name="tipo">Tipo de Prestamos</string>
+    <string name="capital">Capital</string>
+    <string name="monto">Monto</string>
+    <string name="tasa">% Tasa mensual</string>
+    <string name="procesar">Procesar</string>
+    <string name="cuotas">Cuotas:</string>
+    <string name="intere">Cuotas:</string>
+    <string name="lista">Imformacion Detallada Del Prestamos</string>
+</resources>

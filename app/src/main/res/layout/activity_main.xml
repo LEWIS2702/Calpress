@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tabla"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="12dp"
+    tools:context="com.example.windows.calpress.MainActivity">
+
+
+    <TextView
+        android:id="@+id/text1"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:text="@string/tipo"
+        android:textColor="@android:color/white" />
+
+    <Spinner
+        android:id="@+id/tipo_prestamos"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/text1"
+        android:background="@drawable/estilo"
+        android:spinnerMode="dropdown"
+        android:textColor="#ffff" />
+
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tipo_prestamos"
+        android:stretchColumns="*">
+
+        <TableRow android:layout_marginTop="7dp">
+
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/capital"
+                android:textStyle="bold"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold"
+                android:text="@string/tasa"
+                android:textColor="@android:color/white" />
+        </TableRow>
+
+        <TableRow>
+
+            <EditText
+                android:id="@+id/monto"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/estilo"
+                android:hint="@string/monto"
+                android:inputType="numberDecimal"
+                android:padding="5dp"
+                android:textColor="@color/colortext"
+                android:textColorHint="@color/border" />
+
+            <EditText
+                android:id="@+id/tasa"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/estilo"
+                android:hint="5%"
+                android:inputType="number"
+                android:padding="5dp"
+                android:textColor="@color/colortext"
+                android:textColorHint="@color/border" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="7dp">
+
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cuotas"
+                android:textStyle="bold"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold"
+                android:text="Frecuencia"
+                android:textColor="@android:color/white" />
+        </TableRow>
+
+        <TableRow>
+
+            <EditText
+                android:id="@+id/cuotas"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/estilo"
+                android:hint="12"
+                android:inputType="number"
+                android:padding="5dp"
+                android:textColor="@color/colortext"
+                android:textColorHint="@color/border"/>
+" />
+
+            <Spinner
+                android:id="@+id/frecuencia"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/estilo"
+                android:spinnerMode="dialog"
+                android:textColor="#807F7F" />
+
+
+        </TableRow>
+
+        <TableRow android:layout_marginTop="7dp">
+
+            <TextView
+                android:id="@+id/text6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:text="Fecha de Calculo"
+                android:textColor="@android:color/white" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/fecha"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_weight="2"
+                android:background="@drawable/estilo"
+                android:hint="Desde"
+                android:padding="8dp"
+                android:textColor="@color/colortext"
+                android:textColorHint="@color/border"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <View
+        android:id="@+id/sparator"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_below="@id/tableLayout"
+        android:layout_marginTop="20dp"
+        android:background="@color/border" />
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        android:layout_alignTop="@+id/sparator"
+        android:layout_alignParentStart="true">
+
+        <TableRow android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total:"
+                android:textStyle="bold"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Interes:"
+                android:textStyle="bold"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/cuotas"
+                android:textColor="@android:color/white" />
+        </TableRow>
+
+
+        <View
+            android:id="@+id/sparator2"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_marginTop="7dp"
+            android:background="@color/border" />
+
+        <TableRow android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/interes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/cuotasR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:textColor="@android:color/white" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="25dp">
+
+            <Button
+                android:id="@+id/procesar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/estilo2"
+                android:text="@string/procesar"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+        </TableRow>
+
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/verde"
+        android:text="Ver detalles"
+        android:visibility="gone"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:layout_below="@+id/tableLayout2"
+        android:layout_alignParentStart="true" />
+
+
+
+</RelativeLayout>
